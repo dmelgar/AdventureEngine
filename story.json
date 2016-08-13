@@ -1,0 +1,63 @@
+{
+    "1":{
+        "story":
+			["You wake up in a dark space handcuffed and then two doors open.",
+			"You are dragged out of a truck into broad daylight by two ",
+			"SWAT members. They pull you up to a guardpost where the SWAT members",
+			"leave, and the guard escorts you into the prison. Once inside the ",
+			"prison you turn left. Then you turn right and your cell block is ",
+			"in view. Do you",
+			"A run from the guard",
+			"B bang the guard over the head with your handcuffs",
+			"C keep walking"],
+        "choices": { "a": 6, "b": 2, "c": 7 }
+    },
+    "2":{
+        "story": ["You succeed in knocking out the guard. What do you do? ",
+			"A: loot the body",
+			"B: run for it"],
+        "choices": { "a": 3, "b": 0 }
+   	},
+    "3":{
+        "story": [
+    		"You put on the guard's uniform and unlock the handcuffs with the keys you found.",
+		    "You also put on the guard's ID and you walk back the way you came. ",
+    		"You reach a two way intersection. What do you do?",
+	    	"Go Left.",
+   			"Go Forward.",
+    		"Type F for forward and L for left"
+    	],
+        "choices": { "f": 8, "l": 4 }
+   	},
+    "4":{
+        "story": [
+            "As you run down the corridor you remember why you were sent to the prison.",
+            "The murder of Tosh Graves. You were framed for the murder.",
+            "The real murderer escaped through an air vent a second before the police showed up.",
+            "You are cut off from your thought when you reach a two way intersection. What do you do?",
+            "Go Right",
+            "Go Left",
+            "Type R for Right or L for Left"
+      	],
+        "choices": { "l": 9, "r": 5 }
+   	},
+    "5":{
+        "story": [
+                "You reach the entrance of the prison. You hijack a car\nand drive through the gate.",
+                "You then try to hunt down the real murderer and clear your name.",
+                "To be continued"
+                ]
+   	},
+    "6":{
+		"story": ["The guard catches you and you are thrown in your cell."]
+	},
+    "7":{
+		"story": ["You reach your cell."]
+	},
+	"8":{
+		"story": ["You reach the guard's barracks they recognize your shoes as inmate shoes\nand they throw you in your cell."]
+	},
+	"9":{
+		"story": ["You reach the armoury. But there is a guard guarding it. \nHe recognizes your shoes and throws you in your cell."]
+	}
+}
