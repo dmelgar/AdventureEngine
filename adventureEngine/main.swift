@@ -10,15 +10,19 @@ import Foundation
 
 func run() throws {
     guard let fileData = NSData(contentsOfFile: "/Users/evan/Desktop/story.json"),
-        let result = try NSJSONSerialization.JSONObjectWithData(fileData, options: []) as? [String:AnyObject] else {
+    let result = try NSJSONSerialization.JSONObjectWithData(fileData, options: []) as? [String:[String:AnyObject]] else {
         return
     }
     var nextNode = 1;
     while nextNode != 0 {
-        let nodeData: [String:AnyObject] = result[String(nextNode)] as! [String:AnyObject]
-        let node: Node = Node(data: nodeData)
-        node.printStory()
-        nextNode = node.read()
+        if let nodeData: [String:AnyObject] = result[String(nextNode)] {
+            let node: Node = Node(data: nodeData)
+            node.printStory()
+            nextNode = node.read()
+        } else {
+            print("Node not found")
+            return
+        }
     }
 }
 

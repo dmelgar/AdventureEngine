@@ -27,12 +27,14 @@ class Node: NSObject {
         }
         var nextNodeID: Int?
         while nextNodeID == nil {
-            print("Enter one of the following characters:")
-            for c in choices.keys.sort() {
-                print(c, terminator: " ")
-            }
-            let input:String! = readLine(stripNewline: true)
+            let input:String! = readLine(stripNewline: true)?.lowercaseString
             nextNodeID = choices[input]
+            if nextNodeID == nil {
+                print("The guards hate anything thats not", terminator:" ")
+                for c in choices.keys.sort() {
+                    print(c.uppercaseString, terminator: " ")
+                }
+            }
         }
         return nextNodeID!
     }
