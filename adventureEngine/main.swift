@@ -9,7 +9,7 @@
 import Foundation
 
 func run() throws {
-    guard let fileData = NSData(contentsOfFile: "/Users/evan/Desktop/story.json"),
+    guard let fileData = NSData(contentsOfFile: "/Users/evan/Desktop/adventureEngine/story.json"),
     let result = try NSJSONSerialization.JSONObjectWithData(fileData, options: []) as? [String:[String:AnyObject]] else {
         return
     }
