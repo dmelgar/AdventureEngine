@@ -45,8 +45,10 @@
         "story": [
                 "You reach the entrance of the prison. You hijack a car\nand drive through the gate.",
                 "You then try to hunt down the real murderer and clear your name.",
-                "To be continued"
-                ]
+                "To be continued",
+                "F: Go forward"
+                ],
+        "choices": { "f": 10, "b":1 }
    	},
     "6":{
 		"story": ["The guard catches you and you are thrown in your cell."]
@@ -59,5 +61,8 @@
 	},
 	"9":{
 		"story": ["You reach the armoury. But there is a guard guarding it. \nHe recognizes your shoes and throws you in your cell."]
+	},
+	"10":{
+		"story": ["This is a new room to show how the game can be extended."]
 	}
 }

@@ -2,8 +2,8 @@
 //  Node.swift
 //  adventureEngine
 //
-//  Created by Evan on 8/13/16.
-//  Copyright © 2016 Evan. All rights reserved.
+//  Created by David Melgar on 8/13/16.
+//  Copyright © 2016 David Melgar. All rights reserved.
 //
 
 import Foundation
